@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/bike-store-trn/clientlibs"/>
+    <filter root="/apps/bike-store-trn/components"/>
+    <filter root="/apps/bike-store-trn/i18n"/>
+</workspaceFilter>

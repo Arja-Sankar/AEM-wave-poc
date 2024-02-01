@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.imagewoBtn {
+  background-color: #cccccc;
+  height: 400px;
+}
+.woText{
+color:#006A96;
+}
+</style>
+</head>
+<body>
+<div data-sly-use.imageModel="com.infosys.core.models.CustomImageWOButton">
+<div class="imagewoBtn" style="background-image: url(${imageModel.backgroundStyle @context='styleString'});"></div>
+<p class="woText"><b>${imageModel.imageWoBtnText}</b></p>
+</div>
+</div>
+<!-- 
+<div class="imageBtn" style="background-image: url(${properties.imageWoBtnreferenceImage @context='styleString'});"></div>
+<p class="woText"><b>${properties.imageWoBtnText}</b></p>
+-----------------------------------------------------------------------------------------
+<div class="hero-image" style="background-image: url(${properties.heroreferenceImage @context='styleString'});">
+  <div class="hero-text">
+    <h1 style="font-size:50px">${properties.heroTitle}</h1>
+    <a href="${properties.heroButtonLink}">${properties.heroButtonLabel}</a>
+  </div>
+</div> -->
+</body>
+</html>

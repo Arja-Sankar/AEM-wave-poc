@@ -1,0 +1,64 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.hero-image {
+  background-color: #cccccc;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+a{
+text-decoration:none;
+display:none; 
+}
+a[href^="/content"] {
+     display: inline-block;
+  }
+.heroAnchor{
+ background: #0069A6;
+    border: 2px solid #fff;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 10px 10px 0;
+    padding: 7px 15px;
+    box-sizing: border-box;
+    vertical-align: middle;
+   /* line-height: 25px;
+    padding: 15px 48px;
+    font-size: 16px; */
+    border-radius: 30px;
+    box-shadow: none;
+}
+</style>
+</head>
+<body>
+<div data-sly-use.imageModel="com.infosys.core.models.CustomImage">
+<div class="hero-image" style="background-image: url(${imageModel.backgroundStyle @context='styleString'});">
+  <div class="hero-text">
+    <h1 style="font-size:50px">${imageModel.heroTitle}</h1>
+    <a class="heroAnchor" href="${imageModel.heroButtonLink}">${imageModel.heroButtonLabel}</a>
+  </div>
+</div>
+</div>
+<!-- <div class="hero-image" style="background-image: url(${properties.heroreferenceImage @context='styleString'});">
+  <div class="hero-text">
+    <h1 style="font-size:50px">${properties.heroTitle}</h1>
+    <a href="${properties.heroButtonLink}">${properties.heroButtonLabel}</a>
+  </div>
+</div> -->
+</body>
+</html>

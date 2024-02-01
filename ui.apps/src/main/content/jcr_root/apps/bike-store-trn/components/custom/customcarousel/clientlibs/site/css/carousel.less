@@ -1,0 +1,103 @@
+/*
+ *  Copyright 2018 Adobe
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
+.cmp-title__text--skyblue{
+color: #0069a6;
+}
+
+@cmp-carousel-indicator-size: 10px;
+@cmp-carousel-indicator-gap: 14px;
+
+.cmp-carousel__content {
+    position: relative;
+}
+
+.cmp-carousel__item {
+    display: none;
+
+    &--active {
+        display: block;
+    }
+}
+
+.cmp-carousel__action {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+/*.cmp-custom__actions{
+display: none!important;
+}*/
+
+.cmp-cc_prev,.cmp-cc_next{
+-webkit-transform: translate(0, -50%);
+    background: rgba(252,252,252,0.6);
+    border: none;
+    border-radius: 0;
+    /*color: transparent;
+   	color:  rgb(85 85 85);*/
+    color: #555;
+    font-size: 38px;
+    opacity: 1;
+    cursor: pointer;
+    display: block;
+    height: 60px;
+    line-height: 0;
+    outline: none;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 60px;
+    z-index: 101;
+}
+.cmp-cc_prev{
+left:2rem;
+}
+
+.cmp-cc_next{
+    right: 2rem;
+}
+
+.cmp-carousel__indicators {
+     position: relative;
+ bottom: 25px;
+  /*  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;*/
+}
+
+.cmp-carousel__indicator {
+    position: relative;
+
+    flex: 0 1 auto;
+    width: @cmp-carousel-indicator-size;
+    height: @cmp-carousel-indicator-size;
+    margin: 0 @cmp-carousel-indicator-gap/2;
+    border-radius: 50%;
+
+    font-size: 0;
+    text-indent: -3000px;
+
+    background-color: rgba(0, 0, 0, .5);
+
+    &--active {
+        background-color: rgba(0, 0, 0, .8);
+    }
+}

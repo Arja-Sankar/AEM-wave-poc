@@ -1,0 +1,71 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.imgBtn{
+height: 200px;
+}
+.imageBtn {
+  background-color: #cccccc;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.pool-heaters {
+ font-size: 13px;
+ font-weight: bold;
+ color: #006A96;
+
+}
+.warm-water-ready {
+ font-size:18px;
+ font-weight: bold;
+ color: #000000;
+
+}
+a[href^="/content"] {
+     display: inline-block;
+
+  }
+.imgAnchor{
+ background: #0069A6;
+    border: 2px solid #fff;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+   /* margin: 0 10px 10px 0;*/
+    padding: 7px 15px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    border-radius: 30px;
+    box-shadow: none;
+}
+</style>
+</head>
+<body>
+<div class="imgBtn" data-sly-use.imageModel="com.infosys.core.models.CustomImageButton">
+<div class="imageBtn" style="background-image: url(${imageModel.backgroundStyle @context='styleString'});"></div>
+<span class="pool-heaters">${imageModel.imageBtnPrimaryText}</span><br/>
+<span class="warm-water-ready">${imageModel.imageBtnSecondaryText}</span><br/>
+<a class="imgAnchor" href="${imageModel.imageButtonLink}">${imageModel.imageButtonLabel}</a>
+</div>
+
+<!-- 
+<div class="imageBtn" style="background-image: url(${properties.imageBtnreferenceImage @context='styleString'});"></div>
+<div class="imageText">
+<p class="pool-heaters">${properties.imageBtnPrimaryText}</p>
+<p class="warm-water-ready">${properties.imageBtnSecondaryText}</p>
+</div>
+<div class="ButtonImage"><a href="${properties.imageButtonLink}">${properties.imageButtonLabel}</a></div>
+-----------------------------------------------------------------------------------------
+<div class="hero-image" style="background-image: url(${properties.heroreferenceImage @context='styleString'});">
+  <div class="hero-text">
+    <h1 style="font-size:50px">${properties.heroTitle}</h1>
+    <a href="${properties.heroButtonLink}">${properties.heroButtonLabel}</a>
+  </div>
+</div> -->
+</body>
+</html>

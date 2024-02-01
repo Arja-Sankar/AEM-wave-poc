@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/bike-store-trn" mode="merge"/>
+    <filter root="/content/bike-store-trn" mode="merge"/>
+    <filter root="/content/dam/bike-store-trn/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/bike-store-trn" mode="merge"/>
+</workspaceFilter>
